@@ -9,22 +9,69 @@ body {
     font-family: var(--main-font);
 }
 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+}
+
+.list
+{
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+}
+.container{
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0;
+    align-items: center;
+}
+
+.section{
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
 /* ====  COMPONENTS  ==== */
-.modal-bnt{
+.modal-btn{
     font-weight: 600;
     font-size: 12px;
     line-height: 1.333;
     letter-spacing: 0.09em;
     text-transform: uppercase;
     /* color: #ffffff; */
+    padding: 12px;
 }
 .undertitle{
-    ffont-size: 11px;
+    font-size: 11px;
     font-weight: 600;
     line-height: 1.333;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: rgba(1157, 164, 189, 0.6);
+    /* color: rgba(1157, 164, 189, 0.6); */
+    margin-bottom: 20px;
 }
 
 .undertitle-dark-theme{
@@ -50,9 +97,30 @@ body {
     letter-spacing: 0.05em;
     color: #303030;
 }
-
+.social-links{
+    display: flex;
+}
+.social-links__item:not(:last-child){
+    margin-right: 40px;
+}
 
 /* ===== HEADER  ==== */
+.header .container{
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+
+}
+.navigation__list{
+    display: flex;
+}
+
 .navigation__list-link,
 .header__phone-number{
     font-weight: 600;
@@ -60,6 +128,21 @@ body {
     line-height: 1.333;
     letter-spacing: 0.1em;
     /* color: #ffffff; */
+}
+
+.navigation__logo{
+    margin-right: 70px;
+}
+
+.navigation__list-item:not(:last-child){
+    margin-right: 41px;
+}
+
+.header__phone-number{
+    margin-left: auto;
+}
+.header .modal-btn{
+    margin-left: 37px;
 }
 
 
@@ -94,6 +177,7 @@ body {
     font-weight: 700;
     line-height: 1.181px;
     /* color: #ffffff; */
+    margin-bottom: 20px;
 }
 /* ===== END HERO  ==== */
 
