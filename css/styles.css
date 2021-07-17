@@ -46,7 +46,7 @@ img{
 .container{
     width: 1200px;
     padding: 0 15px;
-    margin: 0;
+    margin: 0 auto;
     align-items: center;
 }
 
@@ -56,13 +56,17 @@ img{
 }
 /* ====  COMPONENTS  ==== */
 .modal-btn{
+    width: 164px;
+    border: 1px solid var(--main-color);
+    border-radius: 25px;
+    padding: 12px 10px;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.333;
     letter-spacing: 0.09em;
     text-transform: uppercase;
     /* color: #ffffff; */
-    padding: 12px;
+    
 }
 .undertitle{
     font-size: 11px;
@@ -70,7 +74,6 @@ img{
     line-height: 1.333;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    /* color: rgba(1157, 164, 189, 0.6); */
     margin-bottom: 20px;
 }
 
@@ -146,7 +149,6 @@ img{
     margin-left: 37px;
 }
 
-
 .navigation__list-link:hover,
 .navigation__list-link:focus
 .header__phone-number:hover,
@@ -156,10 +158,17 @@ img{
 }
 
 
-
 /* ===== END HEADER  ==== */
 
 /* ===== HERO  ==== */
+.hero .container{
+    display: flex;
+}
+.social-links{
+    display: flex;
+}
+
+
 .social__links-link{
     font-size: 11px;
     font-weight: 600;
@@ -185,15 +194,37 @@ img{
 .hero__left-side{
     width: 100px;
 }
+.social-links__item:not(:last-child){
+    margin-right: 40px;
+}
+.social-links__item:first-child{
+    display: flex;
+    align-items: center;
+}
+.social-links__item:first-child::before{
+    content: '';
+    height: 1px;
+    width: 60px;
+    background-color: #303030;
+    display: flex;
+    margin-right: 40px;
+ }
+
 .hero__right-side{
+    flex-grow: 1;
     padding-left: 100px;
     padding-bottom: 206px;
     padding-top: 270px;
-}
+    background-image: ./image;
+    /* background-color: #cccccc;
+} */
 
 .hero .description{
     width: 366px;
+    color: #9da4bd;
 }
+
+
 /* ===== END HERO  ==== */
 
 /* ====== about us ========= */
@@ -322,8 +353,8 @@ img{
 }
 .barbers-card-wrapper{
     padding-top: 30px;
-    padding-left: 82px;
-    padding-right: 82px;    
+    /* padding-left: 82px;
+    padding-right: 82px;     */
 }
 
 .barbers__name{
