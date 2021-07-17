@@ -96,6 +96,7 @@ img{
     line-height: 1.667;
     letter-spacing: 0.05em;
     color: #303030;
+    margin-bottom: 20px;
 }
 .social-links{
     display: flex;
@@ -175,20 +176,54 @@ img{
     font-family: var(--secondary-font);
     font-size: 72px;
     font-weight: 700;
-    line-height: 1.181px;
+    line-height: 1.181;
+    letter-spacing: 0.05em;
     /* color: #ffffff; */
     margin-bottom: 20px;
+}
+
+.hero__left-side{
+    width: 100px;
+}
+.hero__right-side{
+    padding-left: 100px;
+    padding-bottom: 206px;
+    padding-top: 270px;
+}
+
+.hero .description{
+    width: 366px;
 }
 /* ===== END HERO  ==== */
 
 /* ====== about us ========= */
+.about .container{
+    display: flex;
+}
+.about__list{
+    display: flex;
 
+}
+.about__list-item:not(:last-child){
+    margin-right: 30px;
+}
+.about__right-side{
+    margin-left: 65px;
+    width: 500;
+}
 .about__text{
     font-size: 14px;
     font-weight: 400;
     line-height: 1.857;
     letter-spacing: 0.02em;
     color: #555555;
+}
+
+.about .description{
+    margin-bottom: 20px;
+}
+.about__text{
+    margin-bottom: 40px;
 }
 /* ====== end about us ========= */
 
@@ -200,16 +235,72 @@ img{
     letter-spacing: 0.02em;
     color: #9DA4BD;
 }
-/* ===== END SERVICES ===== */
-/* ===== ADVANTAGES ==== */
-.advantages__number{
-    Font style: 700;
-    Font size: 42px;
-    Line height: 1.357;
-    Letter spacing: 0.05em;
-    color: #303030;
+.services .secondary-header{
+    padding-bottom: 44px;
 }
 
+.services-wrapper{
+    display: flex;
+    margin-bottom: 46px;
+}
+
+.services__list-item:not(:last-child){
+    margin-bottom: 20px;
+}
+.services__list{
+    width: 50%;
+    padding: 30px 40px;  
+    flex-wrap: wrap;  
+}
+
+.services .modal-btn{
+    display: block;
+    margin: 0 auto;
+}
+/* ===== END SERVICES ===== */
+/* ===== ADVANTAGES ==== */
+.advantages .container{
+    display: flex;
+}
+.advantages-left-side{
+    width: 470px;
+    padding-left: 100px;
+    flex-shrink: 0;
+}
+.advantages__number{
+    font-style: 700;
+    font-size: 42px;
+    line-height: 1.357;
+    letter-spacing: 0.05em;
+    color: #303030;
+}
+.advantages__list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+.advantages__item{
+    width: 170px;
+    padding: 20px 24px;
+    align-items: center;
+    min-height: 133px;
+    border: solid 1px #303030;
+}
+.advantages__item:not(:nth-child(even)){
+    margin-right: 30px;
+}
+
+.advantages__item:nth-child(even){
+    margin-top: 30px;
+}
+.advantages-right-side{
+    padding-left: 130px;
+    
+}
+.advantages .description{
+    width: 445px;
+}
 .advantages__text{
     font-size: 11px;
     font-weight: 600;
@@ -217,32 +308,73 @@ img{
     letter-spacing: 0em;
     color:#303030;
 }
+
+
 /* ===== end ADVANTAGES ==== */
 
 /* ===== barbers ===== */
+.barbers .secondary-header{
+    margin-bottom: 44px;
+}
+.barbers__list{
+    display: flex;
+    justify-content: space-between;
+}
+.barbers-card-wrapper{
+    padding-top: 30px;
+    padding-left: 82px;
+    padding-right: 82px;    
+}
+
 .barbers__name{
     font-size: 18px;
     line-height: 1.389;
     letter-spacing: 0.02em;
     color: #303030;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .barbers__job-title{
     font-size: 14px;
     line-height: 1.357;
     letter-spacing: 0.02em;
-    color: var(--main-color)
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 /* ===== END barbers ===== */
 
 
 /* ===== gallery ===== */
+.gallery .undertitle{
+    margin-bottom: 44px;
+}
+.gallery__list{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 /* ===== END gallery ===== */
 
 
 /* ===== contact ===== */
+.contact .secondary-header{
+    margin-bottom: 40px;
+}
+.address{
+    margin-bottom: 70px;
+}
+.address__item:not(:last-child){
+    margin-bottom: 20px;
+}
+.address__item:first-child{
+    width: 165px;
+}
+.
 /* .contact .undertitle{
     color: #ffffff;
 } */
@@ -261,7 +393,16 @@ img{
 /* ===== END contact ===== */
 
 /* ===== FOOTER ===== */
+.footer{
+    padding-top: 56px;
+    padding-bottom: 56px;
 
+}
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .footer__text{
     font-size: 11px;
     font-weight: 600;
