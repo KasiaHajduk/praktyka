@@ -92,7 +92,7 @@
         <section class="services section">
             <div class="container">
                 <p class="undertitle undertitle-dark-theme">PRZYJDŹ DO NAJLEPSZYCH BARBERÓW W TWOIM MIEŚCIE</p>
-                <h2 class="secondary-header secondary-header-dark-theme">Usługi i ceny</h2>
+                <h2 class="secondary-header secondary-header-dark-theme">Usługi i ceny dla tła w jednym kolorze</h2>
                 <div class="services-wrapper">
                     <ul  class="services__list list">
                         <li class="services__list-item">
@@ -145,13 +145,72 @@
            
         </section>
         <!-- END SERVICES-->
+        <!-- semantycznie słabe rozwiązanie, przy gradiencie nie ma innej mozliwości-->
+        <section class="img-services section">
+            <div class="container">
+                <p class="undertitle undertitle-dark-theme">PRZYJDŹ DO NAJLEPSZYCH BARBERÓW W TWOIM MIEŚCIE</p>
+                <h2 class="secondary-header secondary-header-dark-theme">Usługi i ceny dla tła w obrazku</h2>
+                <div class="img-services-wrapper">
+                    <ul  class="img-services__list list">
+                        <li class="img-services__list-item">
+                            <span class="img-services__list-name">Męskie strzyżenie</span>
+                            <span class="img-services__line"></span>
+                            <span class="img-services__list-price">od 100 zł.</span>
+                        </li>
+                        <li class="img-services__list-item">
+                            <span class="img-services__list-name">Strzyżenie brody</span>
+                            <span class="img-services__line"></span>
+                            <span class="img-services__list-price">od 75 zł.</span>
+                        </li>
+                        <li class="img-services__list-item">
+                            <span class="img-services__list-name">Strzyżenie wąsów</span>
+                            <span class="img-services__line"></span>
+                            <span class="img-services__list-price">od 50 zł.</span>
+                        </li>
+                        <li class="img-services__list-item">
+                            <span class="img-services__list-name">Golenie  brzytwą</span>
+                            <span class="img-services__line"></span>
+                            <span class="img-services__list-price">od 75 zł.</span>
+                        </li>
+                    </ul>
+                    <ul class="img-services__list list">
+                        <li class="img-services__list-item">
+                            <span class="img-services__list-name">Strzyżenie jedna długość</span>
+                            <span class="img-services__line"></span>
+                            <span class="img-services__list-price">od 50 zł.</span>
+                        </li>
+                        <li class="img-services__list-item">
+                            <span class="img-services__list-name">Strzyżenie maszynką</span>
+                            <span class="img-services__line"></span>
+                            <span class="img-services__list-price">od 75 zł.</span>
+                        </li>
+                        <li class="img-services__list-item">
+                            <span class="img-services__list-name">Strzyżenie jedna długość</span>
+                            <span class="img-services__line"></span>
+                            <span class="img-services__list-price">od 50 zł.</span>
+                        </li>
+                        <li class="img-services__list-item">
+                            <span class="img-services__list-name">Repigmentacja włosów</span>
+                            <span class="img-services__line"></span>
+                            <span class="img-services__list-price">od 100 zł.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <button class="modal-btn modal-btn-dark" type="button">REJESTRACJA ONLINE</button>
+            </div>
+           
+        </section>
+
+       
+        <!-- END SERVICES-->
         <!-- ADVANTAGES     WHY US-->
         <section class="advantages section">
             <div class="container">
                 <div class="advantages-left-side">
                     <ul class="advantages__list list">
                         <li class="advantages__item">
-                            <p class="advantages__number">600</p>
+                            <p class="advantages__number">6000</p>
                             <p class="advantages__text">Zadowolonych klientów dziennie</p>
                         </li>
                         <li class="advantages__item">
@@ -317,8 +376,8 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <p class="footer__text">Copyright 2020</p>
-            <ul class="social-links list">
+            <p class="footer__copy">Copyright 2020</p>
+            <ul class="social-links-footer list">
                 <li  class="social-links__item">
                     <a class="social-links__link link" href="#">Instagram</a>
                 </li>
@@ -329,5 +388,18 @@
             </ul>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden">
+        <div class="modal">
+            <button type="button" class="close-btn">X</button>
+            <!-- można dodać obrazek krzyżyk zamknięcia 
+                <svg class="close-btn">
+                <use href="./images/">
+
+                </use>
+            </svg> -->
+        </div>
+    </div>
+    <script src="./js/modal.js"> </script>
 </body>
 </html>
