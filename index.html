@@ -1,405 +1,581 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
     />
     <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
-</head>
-<body>
-    <header class="header"> 
-        <div class="container">
-            <nav class="navigation">
-                <a href="#" class="navigation-logo animate__bounce">
-                    <svg class="logo-icon" width="69" height="56">
-                        <use href="./images/sprite.svg#icon-Logo"></use>
-                    </svg>
-                </a>
-                <ul class="navigation__list list">
-                    <li class="navigation__list-item"><a class="navigation__list-link link"href="#">O nas</a></li>
-                    <li class="navigation__list-item"><a class="navigation__list-link link"href="#">Usługi i ceny</a></li>
-                    <li class="navigation__list-item"><a class="navigation__list-link link"href="#">Barberzy</a></li>
-                    <li class="navigation__list-item"><a class="navigation__list-link link"href="#">Kontakt</a></li>
-                </ul>
-            </nav>    
-            <a class="header__phone-number link" href="tel:48111111111">+48 111 111 111</a>
-            <button class="modal-btn modal-btn-dark" type="button">REJESTRACJA ONLINE</button>
-        </div>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <a href="#" class="navigation-logo animate__bounce">
+            <svg class="logo-icon" width="69" height="56">
+              <use href="./images/sprite.svg#icon-Logo"></use>
+            </svg>
+          </a>
+          <ul class="navigation__list list">
+            <li class="navigation__list-item">
+              <a class="navigation__list-link link" href="#">O nas</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__list-link link" href="#">Usługi i ceny</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__list-link link" href="#">Barberzy</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__list-link link" href="#">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__phone-number link" href="tel:48111111111"
+          >+48 111 111 111</a
+        >
+        <button class="modal-btn modal-btn-dark" type="button" data-modal-open>
+          REJESTRACJA ONLINE
+        </button>
+      </div>
     </header>
-   
+
     <main>
-        <!-- HERO-->
-        <section class="hero"> 
-            <div class="container">
-                <div class="hero__left-side">
-                    <ul class="social-links list">
-                        <li class="social-links__item">
-                            <a class="social-links__link link" href="#">Instagram</a>
-                        </li>
-                        <li class="social-links__item">
-                            <a class="social-links__link link" href="#">Youtube</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="hero__right-side">
-                    <p class="undertitle undertitle-dark-theme">A hair salon for men in Kyiv</p>
-                    <h1 class="main-header">BarberShop</h1>
-                    <p class="description description-dark-theme">Jesteśmy ekspertami w strzyżeniu. Pracujemy szybko, ostrożnie i elegancko.</p>                                                                                                                                                                                                                                                                                                                            
-                </div>
+      <!-- HERO-->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__left-side">
+            <ul class="social-links list">
+              <li class="social-links__item">
+                <a class="social-links__link link" href="#">Instagram</a>
+              </li>
+              <li class="social-links__item">
+                <a class="social-links__link link" href="#">Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="hero__right-side">
+            <p class="undertitle undertitle-dark-theme">
+              A hair salon for men in Kyiv
+            </p>
+            <h1 class="main-header">BarberShop</h1>
+            <p class="description description-dark-theme">
+              Jesteśmy ekspertami w strzyżeniu. Pracujemy szybko, ostrożnie i
+              elegancko.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- END HERO   -->
 
-            </div>
-            
-        </section>
-        <!-- END HERO   -->
+      <!-- about us-->
+      <section class="about section">
+        <div class="container">
+          <ul class="about__list list">
+            <li class="about__list-item">
+              <img
+                class="about__list-img"
+                src="images/about-us-2.jpg"
+                alt="Zdjęcia about us"
+                width="270"
+                height="445"
+              />
+            </li>
+            <li class="about__list-item">
+              <img
+                class="about__list-img"
+                src="images/about-us-1.jpg"
+                alt="Zdjęcia about us"
+                width="270"
+                height="445"
+              />
+            </li>
+          </ul>
+          <div class="about__right-side">
+            <p class="undertitle">O NAS</p>
+            <h2 class="secondary-header">
+              Najlepszy Barbershop w Twoim mieście
+            </h2>
+            <p class="description">
+              Jeśli chcesz dodać pewności do swojego stylu i wyglądu – jesteś w
+              dobrym miejscu.
+            </p>
+            <p class="about__text">
+              Jesteśmy zespołem, który nigdy nie stoi w miejscu i jest cały czas
+              w poszukiwaniu coraz lepszych rozwiązań. Kiedy przyjdziesz do nas,
+              już nigdy nie będziesz mógł zrezygnować ze swojego nowego stylu.
+              Jesteśmy zespołem, który zawsze jest z klientem na “TY”, dobrze
+              wiemy, co klient chcę. Chętnie zrobimy upgrade Twojemu wyglądu!
+            </p>
+            <button class="modal-btn" type="button">REJESTRACJA ONLINE</button>
+          </div>
+        </div>
+      </section>
+      <!-- end about us-->
+      <!--SERVICES-->
+      <section class="services section">
+        <div class="container">
+          <p class="undertitle undertitle-dark-theme">
+            PRZYJDŹ DO NAJLEPSZYCH BARBERÓW W TWOIM MIEŚCIE
+          </p>
+          <h2 class="secondary-header secondary-header-dark-theme">
+            Usługi i ceny dla tła w jednym kolorze
+          </h2>
+          <div class="services-wrapper">
+            <ul class="services__list list">
+              <li class="services__list-item">
+                <span class="services__list-name">Męskie strzyżenie</span>
+                <span class="services__line"></span>
+                <span class="services__list-price">od 100 zł.</span>
+              </li>
+              <li class="services__list-item">
+                <span class="services__list-name">Strzyżenie brody</span>
+                <span class="services__line"></span>
+                <span class="services__list-price">od 75 zł.</span>
+              </li>
+              <li class="services__list-item">
+                <span class="services__list-name">Strzyżenie wąsów</span>
+                <span class="services__line"></span>
+                <span class="services__list-price">od 50 zł.</span>
+              </li>
+              <li class="services__list-item">
+                <span class="services__list-name">Golenie brzytwą</span>
+                <span class="services__line"></span>
+                <span class="services__list-price">od 75 zł.</span>
+              </li>
+            </ul>
+            <ul class="services__list list">
+              <li class="services__list-item">
+                <span class="services__list-name"
+                  >Strzyżenie jedna długość</span
+                >
+                <span class="services__line"></span>
+                <span class="services__list-price">od 50 zł.</span>
+              </li>
+              <li class="services__list-item">
+                <span class="services__list-name">Strzyżenie maszynką</span>
+                <span class="services__line"></span>
+                <span class="services__list-price">od 75 zł.</span>
+              </li>
+              <li class="services__list-item">
+                <span class="services__list-name"
+                  >Strzyżenie jedna długość</span
+                >
+                <span class="services__line"></span>
+                <span class="services__list-price">od 50 zł.</span>
+              </li>
+              <li class="services__list-item">
+                <span class="services__list-name">Repigmentacja włosów</span>
+                <span class="services__line"></span>
+                <span class="services__list-price">od 100 zł.</span>
+              </li>
+            </ul>
+          </div>
 
-        <!-- about us-->
-        <section class="about section">
-            <div class="container">
-                <ul class="about__list  list">
-                    <li class="about__list-item"><img class="about__list-img" src="images/about-us-2.jpg" alt="Zdjęcia about us" width="270" height="445"></li>
-                    <li class="about__list-item"><img class="about__list-img" src="images/about-us-1.jpg" alt="Zdjęcia about us" width="270" height="445"></li>
-                </ul>    
-                <div class="about__right-side">
-                    <p class="undertitle">O NAS</p>
-                    <h2 class="secondary-header">Najlepszy Barbershop 
-                        w Twoim mieście </h2>
-                    <p class="description">Jeśli chcesz dodać pewności do swojego stylu i wyglądu – jesteś w dobrym miejscu.</p>
-                    <p class="about__text">Jesteśmy zespołem, który nigdy nie stoi w miejscu i jest cały czas w poszukiwaniu coraz lepszych rozwiązań. Kiedy przyjdziesz do nas, już nigdy nie będziesz mógł zrezygnować ze swojego nowego stylu.
-                        Jesteśmy zespołem, który zawsze jest z klientem na “TY”, dobrze wiemy, co klient chcę. Chętnie zrobimy upgrade Twojemu wyglądu!</p>
-                    <button class="modal-btn" type="button">REJESTRACJA ONLINE</button>
-                </div>
+          <button class="modal-btn modal-btn-dark" type="button">
+            REJESTRACJA ONLINE
+          </button>
+        </div>
+      </section>
+      <!-- END SERVICES-->
+      <!-- semantycznie słabe rozwiązanie, przy gradiencie nie ma innej mozliwości-->
+      <section class="img-services section">
+        <div class="container">
+          <p class="undertitle undertitle-dark-theme">
+            PRZYJDŹ DO NAJLEPSZYCH BARBERÓW W TWOIM MIEŚCIE
+          </p>
+          <h2 class="secondary-header secondary-header-dark-theme">
+            Usługi i ceny dla tła w obrazku
+          </h2>
+          <div class="img-services-wrapper">
+            <ul class="img-services__list list">
+              <li class="img-services__list-item">
+                <span class="img-services__list-name">Męskie strzyżenie</span>
+                <span class="img-services__line"></span>
+                <span class="img-services__list-price">od 100 zł.</span>
+              </li>
+              <li class="img-services__list-item">
+                <span class="img-services__list-name">Strzyżenie brody</span>
+                <span class="img-services__line"></span>
+                <span class="img-services__list-price">od 75 zł.</span>
+              </li>
+              <li class="img-services__list-item">
+                <span class="img-services__list-name">Strzyżenie wąsów</span>
+                <span class="img-services__line"></span>
+                <span class="img-services__list-price">od 50 zł.</span>
+              </li>
+              <li class="img-services__list-item">
+                <span class="img-services__list-name">Golenie brzytwą</span>
+                <span class="img-services__line"></span>
+                <span class="img-services__list-price">od 75 zł.</span>
+              </li>
+            </ul>
+            <ul class="img-services__list list">
+              <li class="img-services__list-item">
+                <span class="img-services__list-name"
+                  >Strzyżenie jedna długość</span
+                >
+                <span class="img-services__line"></span>
+                <span class="img-services__list-price">od 50 zł.</span>
+              </li>
+              <li class="img-services__list-item">
+                <span class="img-services__list-name">Strzyżenie maszynką</span>
+                <span class="img-services__line"></span>
+                <span class="img-services__list-price">od 75 zł.</span>
+              </li>
+              <li class="img-services__list-item">
+                <span class="img-services__list-name"
+                  >Strzyżenie jedna długość</span
+                >
+                <span class="img-services__line"></span>
+                <span class="img-services__list-price">od 50 zł.</span>
+              </li>
+              <li class="img-services__list-item">
+                <span class="img-services__list-name"
+                  >Repigmentacja włosów</span
+                >
+                <span class="img-services__line"></span>
+                <span class="img-services__list-price">od 100 zł.</span>
+              </li>
+            </ul>
+          </div>
 
-            </div>
-            
-        </section>
-        <!-- end about us-->
-        <!--SERVICES-->
-        <section class="services section">
-            <div class="container">
-                <p class="undertitle undertitle-dark-theme">PRZYJDŹ DO NAJLEPSZYCH BARBERÓW W TWOIM MIEŚCIE</p>
-                <h2 class="secondary-header secondary-header-dark-theme">Usługi i ceny dla tła w jednym kolorze</h2>
-                <div class="services-wrapper">
-                    <ul  class="services__list list">
-                        <li class="services__list-item">
-                            <span class="services__list-name">Męskie strzyżenie</span>
-                            <span class="services__line"></span>
-                            <span class="services__list-price">od 100 zł.</span>
-                        </li>
-                        <li class="services__list-item">
-                            <span class="services__list-name">Strzyżenie brody</span>
-                            <span class="services__line"></span>
-                            <span class="services__list-price">od 75 zł.</span>
-                        </li>
-                        <li class="services__list-item">
-                            <span class="services__list-name">Strzyżenie wąsów</span>
-                            <span class="services__line"></span>
-                            <span class="services__list-price">od 50 zł.</span>
-                        </li>
-                        <li class="services__list-item">
-                            <span class="services__list-name">Golenie  brzytwą</span>
-                            <span class="services__line"></span>
-                            <span class="services__list-price">od 75 zł.</span>
-                        </li>
-                    </ul>
-                    <ul class="services__list list">
-                        <li class="services__list-item">
-                            <span class="services__list-name">Strzyżenie jedna długość</span>
-                            <span class="services__line"></span>
-                            <span class="services__list-price">od 50 zł.</span>
-                        </li>
-                        <li class="services__list-item">
-                            <span class="services__list-name">Strzyżenie maszynką</span>
-                            <span class="services__line"></span>
-                            <span class="services__list-price">od 75 zł.</span>
-                        </li>
-                        <li class="services__list-item">
-                            <span class="services__list-name">Strzyżenie jedna długość</span>
-                            <span class="services__line"></span>
-                            <span class="services__list-price">od 50 zł.</span>
-                        </li>
-                        <li class="services__list-item">
-                            <span class="services__list-name">Repigmentacja włosów</span>
-                            <span class="services__line"></span>
-                            <span class="services__list-price">od 100 zł.</span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <button class="modal-btn modal-btn-dark" type="button">REJESTRACJA ONLINE</button>
-            </div>
-           
-        </section>
-        <!-- END SERVICES-->
-        <!-- semantycznie słabe rozwiązanie, przy gradiencie nie ma innej mozliwości-->
-        <section class="img-services section">
-            <div class="container">
-                <p class="undertitle undertitle-dark-theme">PRZYJDŹ DO NAJLEPSZYCH BARBERÓW W TWOIM MIEŚCIE</p>
-                <h2 class="secondary-header secondary-header-dark-theme">Usługi i ceny dla tła w obrazku</h2>
-                <div class="img-services-wrapper">
-                    <ul  class="img-services__list list">
-                        <li class="img-services__list-item">
-                            <span class="img-services__list-name">Męskie strzyżenie</span>
-                            <span class="img-services__line"></span>
-                            <span class="img-services__list-price">od 100 zł.</span>
-                        </li>
-                        <li class="img-services__list-item">
-                            <span class="img-services__list-name">Strzyżenie brody</span>
-                            <span class="img-services__line"></span>
-                            <span class="img-services__list-price">od 75 zł.</span>
-                        </li>
-                        <li class="img-services__list-item">
-                            <span class="img-services__list-name">Strzyżenie wąsów</span>
-                            <span class="img-services__line"></span>
-                            <span class="img-services__list-price">od 50 zł.</span>
-                        </li>
-                        <li class="img-services__list-item">
-                            <span class="img-services__list-name">Golenie  brzytwą</span>
-                            <span class="img-services__line"></span>
-                            <span class="img-services__list-price">od 75 zł.</span>
-                        </li>
-                    </ul>
-                    <ul class="img-services__list list">
-                        <li class="img-services__list-item">
-                            <span class="img-services__list-name">Strzyżenie jedna długość</span>
-                            <span class="img-services__line"></span>
-                            <span class="img-services__list-price">od 50 zł.</span>
-                        </li>
-                        <li class="img-services__list-item">
-                            <span class="img-services__list-name">Strzyżenie maszynką</span>
-                            <span class="img-services__line"></span>
-                            <span class="img-services__list-price">od 75 zł.</span>
-                        </li>
-                        <li class="img-services__list-item">
-                            <span class="img-services__list-name">Strzyżenie jedna długość</span>
-                            <span class="img-services__line"></span>
-                            <span class="img-services__list-price">od 50 zł.</span>
-                        </li>
-                        <li class="img-services__list-item">
-                            <span class="img-services__list-name">Repigmentacja włosów</span>
-                            <span class="img-services__line"></span>
-                            <span class="img-services__list-price">od 100 zł.</span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <button class="modal-btn modal-btn-dark" type="button">REJESTRACJA ONLINE</button>
-            </div>
-           
-        </section>
+          <button class="modal-btn modal-btn-dark" type="button">
+            REJESTRACJA ONLINE
+          </button>
+        </div>
+      </section>
 
-       
-        <!-- END SERVICES-->
-        <!-- ADVANTAGES     WHY US-->
-        <section class="advantages section">
-            <div class="container">
-                <div class="advantages-left-side">
-                    <ul class="advantages__list list">
-                        <li class="advantages__item">
-                            <p class="advantages__number">6000</p>
-                            <p class="advantages__text">Zadowolonych klientów dziennie</p>
-                        </li>
-                        <li class="advantages__item">
-                            <p class="advantages__number">50</p>
-                            <p class="advantages__text">Nagród za najlepszą obsługę</p>
-                        </li>
-                        <li class="advantages__item">
-                            <p class="advantages__number">200</p>
-                            <p class="advantages__text">Najlepszych barberów Warszawy</p>
-                        </li>
-                        <li class="advantages__item">
-                            <p class="advantages__number">100</p>
-                            <p class="advantages__text">Prezentów stałym klientom</p>
-                        </li>
-                    </ul>
-                </div>
+      <!-- END SERVICES-->
+      <!-- ADVANTAGES     WHY US-->
+      <section class="advantages section">
+        <div class="container">
+          <div class="advantages-left-side">
+            <ul class="advantages__list list">
+              <li class="advantages__item">
+                <p class="advantages__number">6000</p>
+                <p class="advantages__text">Zadowolonych klientów dziennie</p>
+              </li>
+              <li class="advantages__item">
+                <p class="advantages__number">50</p>
+                <p class="advantages__text">Nagród za najlepszą obsługę</p>
+              </li>
+              <li class="advantages__item">
+                <p class="advantages__number">200</p>
+                <p class="advantages__text">Najlepszych barberów Warszawy</p>
+              </li>
+              <li class="advantages__item">
+                <p class="advantages__number">100</p>
+                <p class="advantages__text">Prezentów stałym klientom</p>
+              </li>
+            </ul>
+          </div>
 
-                <div class="advantages-right-side">
-                    <p class="undertitle">TRADYCYJNA SZKOŁA</p>
-                    <h2 class="secondary-header">Dlaczego klienci przychodzą do nas? </h2>
-                    <p class="description">O nas mówią tylko dobrze. Ale najlepiej jeden raz zobaczyć i odczuć, niż 10 razy przeczytać.</p>
-                </div>
-                
-
-            </div>
-            
-        </section>
-        <!-- END WHY US-->
-        <!--BARBERS-->
-        <section class="barbers section">
-            <div class="container">
-                <p class="undertitle">Dla prawdziwych mężczyzn</p>
-                <h2 class="secondary-header">Nasi barberzy</h2>
-                <ul class="barbers__list list">
-                    <li class="barbers__card">
-                        <div class="barbers-card-wrapper">
-                            <img class="barbers__img" src="./images/barbers-img-1.jpg" alt="Praca barbera" width="370" height="346">
-                            <p class="barbers__name"> John Smith</p>
-                            <p class="barbers__job-title">Extreme Barber</p>
-                            <ul class="social-list list">
-                                <li class="social-list-item"><a class="social-list-link link" href="#">
-                                    <svg class="social-icon">
-                                        <use href="./images/sprite.svg#icon-instagram"></use>
-                                    </svg>
-                                </a></li>
-                                <li class="social-list-item"><a class="social-list-link link" href="#">
-                                    <svg class="social-icon">
-                                        <use href="./images/sprite.svg#icon-twitter"></use>
-                                    </svg>
-                                </a></li>
-                                <li class="social-list-item"><a class="social-list-link link" href="#">
-                                    <svg class="social-icon">
-                                        <use href="./images/sprite.svg#icon-facebook"></use>
-                                    </svg>
-                                </a></li>
-                                <li class="social-list-item"><a class="social-list-link link" href="#">
-                                    <svg class="social-icon">
-                                        <use href="./images/sprite.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a></li>
-                            </ul>
-                        </div>                       
-                    </li>
-                    <li class="barbers__card">
-                        <div class="barbers-card-wrapper">
-                            <img class="barbers__img" src="./images/barbers-img-2.jpg" alt="Praca barbera" width="370" height="346">
-                            <p class="barbers__name">Michele Doe</p>
-                            <p class="barbers__job-title">Extreme Barber</p>
-                            <ul class="social-list list">
-                                <li class="social-list-item"><a class="social-list-link link" href="#">
-                                    <svg class="social-icon">
-                                        <use href="./images/sprite.svg#icon-instagram"></use>
-                                    </svg>
-                                </a></li>
-                                <li class="social-list-item"><a class="social-list-link link" href="#">
-                                    <svg class="social-icon">
-                                        <use href="./images/sprite.svg#icon-twitter"></use>
-                                    </svg>
-                                </a></li>
-                                <li class="social-list-item"><a class="social-list-link link" href="#">
-                                    <svg class="social-icon">
-                                        <use href="./images/sprite.svg#icon-facebook"></use>
-                                    </svg>
-                                </a></li>
-                                <li class="social-list-item"><a class="social-list-link link" href="#">
-                                    <svg class="social-icon">
-                                        <use href="./images/sprite.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a></li>
-                            </ul>
-                        </div>                       
-                    </li>
-                    <li class="barbers__card">
-                        <div class="barbers-card-wrapper">
-                            <img class="barbers__img" src="./images/barbers-img-3.jpg" alt="Praca barbera" width="370" height="346">
-                            <p class="barbers__name"> Alan Black</p>
-                            <p class="barbers__job-title">Extreme Barber</p>
-                            <ul class="social-list list">
-                                <li class="social-list-item"><a class="social-list-link link" href="#">
-                                    <svg class="social-icon">
-                                        <use href="./images/sprite.svg#icon-instagram"></use>
-                                    </svg>
-                                </a></li>
-                                <li class="social-list-item"><a class="social-list-link link" href="#">
-                                    <svg class="social-icon">
-                                        <use href="./images/sprite.svg#icon-twitter"></use>
-                                    </svg>
-                                </a></li>
-                                <li class="social-list-item"><a class="social-list-link link" href="#">
-                                    <svg class="social-icon">
-                                        <use href="./images/sprite.svg#icon-facebook"></use>
-                                    </svg>
-                                </a></li>
-                                <li class="social-list-item"><a class="social-list-link link" href="#">
-                                    <svg class="social-icon">
-                                        <use href="./images/sprite.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a></li>
-                            </ul>
-                        </div>                        
-                    </li>
+          <div class="advantages-right-side">
+            <p class="undertitle">TRADYCYJNA SZKOŁA</p>
+            <h2 class="secondary-header">
+              Dlaczego klienci przychodzą do nas?
+            </h2>
+            <p class="description">
+              O nas mówią tylko dobrze. Ale najlepiej jeden raz zobaczyć i
+              odczuć, niż 10 razy przeczytać.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- END WHY US-->
+      <!--BARBERS-->
+      <section class="barbers section">
+        <div class="container">
+          <p class="undertitle">Dla prawdziwych mężczyzn</p>
+          <h2 class="secondary-header">Nasi barberzy</h2>
+          <ul class="barbers__list list">
+            <li class="barbers__card">
+              <div class="barbers-card-wrapper">
+                <img
+                  class="barbers__img"
+                  src="./images/barbers-img-1.jpg"
+                  alt="Praca barbera"
+                  width="370"
+                  height="346"
+                />
+                <p class="barbers__name">John Smith</p>
+                <p class="barbers__job-title">Extreme Barber</p>
+                <ul class="social-list list">
+                  <li class="social-list-item">
+                    <a class="social-list-link link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
                 </ul>
-            </div>
-        </section>
-        <!--END BARBERS-->
-        
-        <!--GALLERY-->
-        <section class="gallery section">
-            <div class="container">
-                <h2 class="gallery__header" hidden>galeria zdjęć </h2>
-                <p class="undertitle"> W języku łacinskim “barba” oznacza “broda”</p>
-                <ul class="gallery__list list">
-                    <li class="gallery__list-item"><img class="gallery__list-item-photo" src="./images/gallery-1.jpg" alt="Galeria barberów" width="270" height="360"></li>
-                    <li class="gallery__list-item"><img class="gallery__list-item-photo" src="./images/gallery-2.jpg" alt="Galeria barberów" width="270" height="360"></li>
-                    <li class="gallery__list-item"><img class="gallery__list-item-photo" src="./images/gallery-3.jpg" alt="Galeria barberów" width="270" height="360"></li>
-                    <li class="gallery__list-item"><img class="gallery__list-item-photo" src="./images/gallery-4.jpg" alt="Galeria barberów" width="270" height="360"></li>
+              </div>
+            </li>
+            <li class="barbers__card">
+              <div class="barbers-card-wrapper">
+                <img
+                  class="barbers__img"
+                  src="./images/barbers-img-2.jpg"
+                  alt="Praca barbera"
+                  width="370"
+                  height="346"
+                />
+                <p class="barbers__name">Michele Doe</p>
+                <p class="barbers__job-title">Extreme Barber</p>
+                <ul class="social-list list">
+                  <li class="social-list-item">
+                    <a class="social-list-link link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
                 </ul>
-            </div>
-        </section>
-        <!--END GALLERY-->
+              </div>
+            </li>
+            <li class="barbers__card">
+              <div class="barbers-card-wrapper">
+                <img
+                  class="barbers__img"
+                  src="./images/barbers-img-3.jpg"
+                  alt="Praca barbera"
+                  width="370"
+                  height="346"
+                />
+                <p class="barbers__name">Alan Black</p>
+                <p class="barbers__job-title">Extreme Barber</p>
+                <ul class="social-list list">
+                  <li class="social-list-item">
+                    <a class="social-list-link link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--END BARBERS-->
 
-        <!-- ===== contact ===== *-->
-        <section class="contact section">
-            <div class="container">
-                <section class="contact__left-side">
-                    <h2 class="secondary-header">Rezerwacja online</h2>
-                </section>
-                <section class="contact__right-side">
-                    <h2 class="secondary-header">Kontakt</h2>
-                    <address class="address">
-                        <ul class="address__list list">
-                            <li class="address__item"><a class="address_item-link link" href="" target="blank">ul. Prosta 20 Warszawa, 00-001</a></li>
-                            <li class="address__item"><a class="address_item-link link" href="tel:48111111111">+48 111 111 111</a></li>
-                            <li class="address__item"><a class="address_item-link link" href="mailto:barbershop@email.com">barbershop@email.com</a></li>
-                        </ul>
-                    </address>
-                    <p class="undertitle">Godziny otwarcia</p>
-                    <p class="contact__hours">Codziennie od 9:00 do 22:00</p>
-                </section>
-            </div>
-        </section>
-        
+      <!--GALLERY-->
+      <section class="gallery section">
+        <div class="container">
+          <h2 class="gallery__header" hidden>galeria zdjęć</h2>
+          <p class="undertitle">W języku łacinskim “barba” oznacza “broda”</p>
+          <ul class="gallery__list list">
+            <li class="gallery__list-item">
+              <img
+                class="gallery__list-item-photo"
+                src="./images/gallery-1.jpg"
+                alt="Galeria barberów"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery__list-item">
+              <img
+                class="gallery__list-item-photo"
+                src="./images/gallery-2.jpg"
+                alt="Galeria barberów"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery__list-item">
+              <img
+                class="gallery__list-item-photo"
+                src="./images/gallery-3.jpg"
+                alt="Galeria barberów"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery__list-item">
+              <img
+                class="gallery__list-item-photo"
+                src="./images/gallery-4.jpg"
+                alt="Galeria barberów"
+                width="270"
+                height="360"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--END GALLERY-->
+
+      <!-- ===== contact ===== *-->
+      <section class="contact section">
+        <div class="container">
+          <section class="contact__left-side">
+            <h2 class="secondary-header">Rezerwacja online</h2>
+          </section>
+          <section class="contact__right-side">
+            <h2 class="secondary-header">Kontakt</h2>
+            <address class="address">
+              <ul class="address__list list">
+                <li class="address__item">
+                  <a class="address_item-link link" href="" target="blank"
+                    >ul. Prosta 20 Warszawa, 00-001</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="address_item-link link" href="tel:48111111111"
+                    >+48 111 111 111</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a
+                    class="address_item-link link"
+                    href="mailto:barbershop@email.com"
+                    >barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <p class="undertitle">Godziny otwarcia</p>
+            <p class="contact__hours">Codziennie od 9:00 do 22:00</p>
+          </section>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <div class="container">
-            <p class="footer__copy">Copyright 2020</p>
-            <ul class="social-links-footer list">
-                <li  class="social-links__item">
-                    <a class="social-links__link link" href="#">Instagram</a>
-                </li>
-                <li class="social-links__item">
-                    <a class="social-links__link link" href="#">You tube</a>
-                </li>
-    
-            </ul>
-        </div>
+      <div class="container">
+        <p class="footer__copy">Copyright 2020</p>
+        <ul class="social-links-footer list">
+          <li class="social-links__item">
+            <a class="social-links__link link" href="#">Instagram</a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link link" href="#">You tube</a>
+          </li>
+        </ul>
+      </div>
     </footer>
 
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="close-btn">X</button>
-            <!-- można dodać obrazek krzyżyk zamknięcia 
+            <button type="button" class="close-btn" data-modal-close>X</button>
+           <!-- można dodać obrazek krzyżyk zamknięcia 
                 <svg class="close-btn">
-                <use href="./images/">
-
-                </use>
+                <use href="./images/"> </use>
             </svg> -->
-        </div>
+           <h2 class="modal__form-header">
+               Rezerwacja online
+           </h2> 
+           <form action="#" class="modal__form">
+                
+                <label for="" class="modal__form-field">
+                    Imie
+                    <span class="modal__form-input-wrapper">
+                        <input type="text" name="user_name" class="modal__form-input">
+                        <span class="modal__form-icon"></span>
+                    </span>
+                </label>
+    
+                <label for="" class="modal__form-field">
+                    Telefon
+                    <span class="modal__form-input-wrapper">
+                        <input type="tel" name="user_tel" class="modal__form-input">
+                        <span class="modal__form-icon"></span>
+                    </span>
+                </label>
+
+                <label for="" class="modal__form-field" name="user_message" placeholder="Wprowadź tekst">
+                   Komentarz
+                    <textarea class="modal__form-message">
+                    </textarea>
+                </label>
+
+                <input type="checkbox" class="modal__form-policy" name="user_policy" value="accept_policy">
+                <label for="user-policy" class="modal__form-policy-text"> Wyrażam zgodę na <a href="">Regulamin</a></label>
+           </form>
+      </div>
     </div>
-    <script src="./js/modal.js"> </script>
-</body>
+    <script src="./js/modal.js"></script>
+  </body>
 </html>
