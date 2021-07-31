@@ -693,7 +693,7 @@ img{
     border-color: #fff;
 }
 
-.contact-form__input:focus::placeholder,
+.contact-form__input:focus::placeholder
 {
     color: #fff;
 }
@@ -732,7 +732,7 @@ img{
 .contact-form__btn:focus{
     background-color: var(--main-color);
     color: #fff;
-
+}
 /* ===== END contact ===== */
 
 /* ===== FOOTER ===== */
@@ -807,6 +807,11 @@ img{
     pointer-events: none;
 }
 
+.modal{
+    padding: 40px;
+}
+
+
 .modal__form-header{
     text-align: center;
     font-weight: bold;
@@ -820,9 +825,8 @@ img{
 
 .modal__form{
     display: flex;
-    flex-direction: column; 
-    margin-left: 40px;
-    margin-right: 40px;
+    width: 100%;
+    flex-direction: column;
 }
 
 .modal__form-field{
@@ -863,7 +867,6 @@ img{
     width: 18px;
     height: 18px;
     transition: background-color 250ms linear;
- 
 }
 
 .modal__form-message{
@@ -894,13 +897,20 @@ img{
     content: ""; 
     width: 16px;
     height: 16px;
-    outline: 1px solid #000000;
-    margin-right: 10px;
+    border: 1px solid #000000;
 }
 
-.modal__form-policy:checked + .modal__form-policy-text{
+
+.modal__form-policy:checked + .modal__form-policy-text::before{
     background-color: var(--main-color);
-    border: 4px solid #fff;
+    border: 3px solid #fff;
+    background-image: url(../images/vector.svg);
+}
+
+.modal__form-policy:checked + .modal__form-policy-text::before{
+    background-color: var(--main-color);
+    border: 3px solid #fff;
+    background-image: url(../images/vector.svg);
 }
 
 .modal__form-btn{
@@ -925,6 +935,18 @@ img{
     background-color: var(--main-color);
     color: #fff;
 }
+
+.visually-hidden{
+    position: absolute !important;
+    clip: rct(1px 1px 1px 1px);
+    clip:rect(1pz, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
 /***   END BACKDROP***/
 
 
