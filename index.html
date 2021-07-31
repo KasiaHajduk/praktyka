@@ -491,26 +491,38 @@
       <!-- ===== contact ===== *-->
       <section class="contact section">
         <div class="container">
-          <section class="contact__left-side">
-            <h2 class="secondary-header">Rezerwacja online</h2>
+          <section class="contact-form-section">
+            <h2 class="secondary-header secondary-header-dark-theme">Rezerwacja online</h2>
+            <form action="#" class="contact-form">
+              <input type="text" name="user_name" class="contact-form__input" placeholder="Imie *" required>
+              <input type="tel" name="user_phone" class="contact-form__input" placeholder="Telefon *" required>
+              <textarea name="user_message" class="contact-form__message" placeholder="Wiadomość"></textarea>
+              <button type="submit" class="contact-form__btn">
+                  Wyślij
+              </button>
+
+            </form>
+
           </section>
+        
+          
           <section class="contact__right-side">
-            <h2 class="secondary-header">Kontakt</h2>
+            <h2 class="secondary-header secondary-header-dark-theme">KONTAKT</h2>
             <address class="address">
               <ul class="address__list list">
                 <li class="address__item">
-                  <a class="address_item-link link" href="" target="blank"
+                  <a class="address__item-link link" href="" target="blank"
                     >ul. Prosta 20 Warszawa, 00-001</a
                   >
                 </li>
                 <li class="address__item">
-                  <a class="address_item-link link" href="tel:48111111111"
+                  <a class="address__item-link link" href="tel:48111111111"
                     >+48 111 111 111</a
                   >
                 </li>
                 <li class="address__item">
                   <a
-                    class="address_item-link link"
+                    class="address__item-link link"
                     href="mailto:barbershop@email.com"
                     >barbershop@email.com</a
                   >
@@ -548,8 +560,7 @@
                Rezerwacja online
            </h2> 
            <form action="#" class="modal__form">
-                
-                <label for="" class="modal__form-field">
+               <label for="" class="modal__form-field">
                     Imie
                     <span class="modal__form-input-wrapper">
                         <input type="text" name="user_name" class="modal__form-input">
@@ -565,14 +576,19 @@
                     </span>
                 </label>
 
-                <label for="" class="modal__form-field" name="user_message" placeholder="Wprowadź tekst">
-                   Komentarz
-                    <textarea class="modal__form-message">
+                <label class="modal__form-field">
+                    Komentarz
+                    <textarea class="modal__form-message" name="user_message" placeholder="Wprowadź tekst">
                     </textarea>
                 </label>
 
-                <input type="checkbox" class="modal__form-policy" name="user_policy" value="accept_policy">
-                <label for="user-policy" class="modal__form-policy-text"> Wyrażam zgodę na <a href="">Regulamin</a></label>
+                <input id="user-policy" type="checkbox" name="user_policy" value="accept_policy"
+                    class="modal__form-policy visually-hidden">
+                <label for="user-policy" class="modal__form-policy-text"> 
+                  Wyrażam zgodę na <a href="#">Regulamin</a></label>
+                <button type="submit" class="modal__form-btn">
+                  Wyślij
+                </button>
            </form>
       </div>
     </div>
