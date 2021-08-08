@@ -739,15 +739,14 @@ img{
 .footer .container{
     display: flex;
     justify-content: space-between;
-    padding-top: 56px;
-    padding-bottom: 56px;
+    padding: 60px 0;
 
 }
-.footer .container{
+/* .footer .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 .footer__copy{
     font-size: 11px;
     font-weight: 600;
@@ -907,10 +906,10 @@ img{
     background-image: url(../images/vector.svg);
 }
 
-.modal__form-policy:checked + .modal__form-policy-text::before{
+/* .modal__form-policy:checked + .modal__form-policy-text::before{
     background-color: var(--main-color);
     border: 3px solid #fff;
-    background-image: url(../images/vector.svg);
+    background-image: url(../images/vector.svg); */
 }
 
 .modal__form-btn{
