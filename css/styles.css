@@ -51,7 +51,9 @@ img {
   padding-top: 130px;
   padding-bottom: 130px;
 }
+
 /* ====  COMPONENTS  ==== */
+
 .modal-btn {
   width: 164px;
   border: 1px solid var(--main-color);
