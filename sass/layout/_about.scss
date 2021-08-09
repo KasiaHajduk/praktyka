@@ -1,0 +1,26 @@
+
+.about .container {
+  display: flex;
+}
+.about__list {
+  display: flex;
+}
+.about__list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.about__right-side {
+  margin-left: 65px;
+  width: 500px;
+}
+.about__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.857;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+
+.about__text {
+  margin-bottom: 40px;
+}

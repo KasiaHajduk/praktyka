@@ -1,0 +1,70 @@
+
+.img-services {
+  background-image: url("../images/services-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #111319;
+}
+
+.img-services-wrapper {
+  display: flex;
+  margin-bottom: 46px;
+}
+
+.img-services .secondary-header {
+  padding-bottom: 44px;
+}
+
+.img-services__list {
+  width: 50%;
+  padding: 30px 40px;
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+  flex-wrap: wrap;
+}
+
+.img-services__list-name,
+.img-services__list-price {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+  padding-right: 5px;
+  padding-right: 5px;
+}
+
+.img-services__list-item {
+  display: flex;
+  align-items: baseline;
+}
+.img-services__line {
+  display: block;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+  flex-grow: 1;
+  margin: 0 6px;
+}
+
+.img-services__list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.services__list:nth-child(odd) {
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+}
+
+.services__list:nth-child(even) {
+  background-image: linear-gradient(
+    180deg,
+    #090b13 0%,
+    rgba(9, 11, 19, 0.2) 100%
+  );
+}

@@ -1,0 +1,35 @@
+.address {
+  margin-bottom: 70px;
+}
+.address__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.address__item:first-child {
+  width: 165px;
+}
+
+.contact .undertitle {
+  color: #ffffff;
+}
+
+.address__item-link,
+.contact__hours {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.contact {
+  display: flex;
+  background-color: #191c26;
+}
+
+.contact .title {
+  margin-bottom: 40px;
+}
+.contact .address {
+  margin-bottom: 70px;
+}

@@ -388,6 +388,7 @@ img {
 /* ===== END SERVICES ===== */
 
 /* =====  IMG SERVICES IMG===== */
+
 .img-services {
   background-image: url("../images/services-bg.png");
   background-repeat: no-repeat;
@@ -652,6 +653,7 @@ img {
   margin-bottom: 70px;
 }
 /***********  CONTACT FORM ***/
+
 .contact-form-section {
   width: 50%;
   padding-top: 130px;
