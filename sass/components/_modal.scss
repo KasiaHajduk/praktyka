@@ -95,13 +95,13 @@
   resize: none;
   transition: border-color 250ms linear;
     &:focus {
-    outline: none;
-    border-color: var(--main-color);
-  }
+      outline: none;
+      border-color: var(--main-color);
+    }
     &::placeholder {
-    text-transform: uppercase;
-    color: grey;
-}
+      text-transform: uppercase;
+      color: grey;
+    }
 }
 
 
