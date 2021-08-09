@@ -3,4 +3,14 @@
   padding: 0 15px;
   align-items: center;
   margin: 0 auto;
+
+  .about & {
+  display: flex;
+  }
+
+  .footer & {
+  display: flex;
+  justify-content: space-between;
+  // padding: 60px 0;
+}
 }

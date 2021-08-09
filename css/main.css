@@ -63,6 +63,13 @@ img {
   align-items: center;
   margin: 0 auto;
 }
+.about .container {
+  display: flex;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
 
 .section {
   padding-top: 130px;
@@ -144,22 +151,8 @@ img {
   color: #555555;
   margin-top: 20px;
 }
-
-.description-dark-theme {
-  color: #9da4bd;
-}
-
-.hero .description {
-  width: 366px;
-  color: #9da4bd;
-}
-
 .about .description {
   margin-bottom: 20px;
-}
-
-.advantages .description {
-  width: 445px;
 }
 
 .undertitle {
@@ -179,6 +172,12 @@ img {
   width: 60px;
   background-color: rgba(157, 164, 189, 0.6);
   margin-right: 20px;
+}
+.contact .undertitle {
+  color: #ffffff;
+}
+.gallery .undertitle {
+  margin-bottom: 44px;
 }
 
 .undertitle-light-theme {
@@ -209,6 +208,9 @@ img {
   font-size: 42px;
   line-height: 1.667;
   letter-spacing: 0.05em;
+}
+.barbers .secondary-header {
+  margin-bottom: 44px;
 }
 
 .social-list {
@@ -576,10 +578,6 @@ img {
   background-color: #cccccc;
 }
 
-.about .container {
-  display: flex;
-}
-
 .about__list {
   display: flex;
 }
@@ -593,15 +591,21 @@ img {
   width: 500px;
 }
 
+.about__right-side-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.857;
+  letter-spacing: 0.02em;
+  color: #555555;
+  margin-bottom: 40px;
+}
+
 .about__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.857;
   letter-spacing: 0.02em;
   color: #555555;
-}
-
-.about__text {
   margin-bottom: 40px;
 }
 
@@ -774,10 +778,6 @@ img {
   margin-bottom: 30px;
 }
 
-.gallery .undertitle {
-  margin-bottom: 44px;
-}
-
 .gallery__list {
   display: flex;
   justify-content: space-between;
@@ -890,10 +890,6 @@ img {
   width: 165px;
 }
 
-.contact .undertitle {
-  color: #ffffff;
-}
-
 .address__item-link,
 .contact__hours {
   font-style: normal;
@@ -917,20 +913,13 @@ img {
   margin-bottom: 70px;
 }
 
-.footer .container {
-  display: flex;
-  justify-content: space-between;
-  padding: 60px 0;
+.footer {
+  padding: 56px 0;
 }
 
-/* .footer .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
 .footer__copy {
-  font-size: 11px;
   font-weight: 600;
+  font-size: 11px;
   line-height: 1.363;
   letter-spacing: 0.2em;
   color: #9da4bd;

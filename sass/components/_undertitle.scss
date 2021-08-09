@@ -14,7 +14,16 @@
     width: 60px;
     background-color: rgba(157, 164, 189, 0.6);
     margin-right: 20px;
-}
+    }
+
+    .contact & {
+      color: #ffffff;
+    }
+
+    .gallery &{
+    margin-bottom: 44px;
+    }
+
 }
 
 
@@ -39,3 +48,4 @@
 .secondary-header-dark-theme {
   color: #fff;
 }
+
