@@ -13,6 +13,7 @@
   --main-font: "Open Sans", sans-serif;
   --secondary-font: "Raleway", sans-serif;
   --main-color: #ff6c00;
+  --accent-color: green;
 }
 
 body {
@@ -80,11 +81,9 @@ img {
   text-transform: uppercase;
   cursor: pointer;
   background-color: transparent;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms linear;
 }
-
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn:hover, .modal-btn:focus {
   background-color: var(--main-color);
   color: #ffffff;
 }
@@ -113,21 +112,17 @@ img {
   color: #303030;
   transition: color 250ms linear;
 }
-
-.social-links__link:hover,
-.social-links__link:focus {
+.social-links__link:hover, .social-links__link:focus {
   color: var(--main-color);
 }
 
 .social-links__item:not(:last-child) {
   margin-right: 40px;
 }
-
 .social-links__item:first-child {
   display: flex;
   align-items: center;
 }
-
 .social-links__item:first-child::before {
   content: "";
   display: flex;
@@ -177,7 +172,6 @@ img {
   display: flex;
   align-items: center;
 }
-
 .undertitle::before {
   content: "";
   display: flex;
@@ -187,47 +181,34 @@ img {
   margin-right: 20px;
 }
 
-.undertitle-light-theme,
-.secondary-header-light-theme {
+.undertitle-light-theme {
   color: #303030;
+}
+.undertitle-light-theme::before {
+  background-color: #303030;
 }
 
 .undertitle-dark-theme {
   color: rgba(157, 164, 189, 0.6);
 }
-
 .undertitle-dark-theme::before {
-  /* color: rgba(157, 164, 189, 0.6); */
-  background-color: #9da4bd99;
+  background-color: rgba(157, 164, 189, 0.6);
 }
 
-.secondary-header {
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 1.667;
-  letter-spacing: 0.05em;
+.secondary-header-light-theme {
   color: #303030;
-  margin-bottom: 20px;
 }
 
 .secondary-header-dark-theme {
-  color: #ffffff;
+  color: #fff;
 }
 
-.services .secondary-header {
-  padding-bottom: 44px;
-}
-
-.img-services .secondary-header {
-  padding-bottom: 44px;
-}
-
-.barbers .secondary-header {
-  margin-bottom: 44px;
-}
-
-.contact .secondary-header {
-  margin-bottom: 40px;
+.secondary-header {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.667;
+  letter-spacing: 0.05em;
 }
 
 .social-list {
@@ -248,26 +229,23 @@ img {
   justify-content: center;
   transition: all 250ms linear;
 }
+.social-list-link:hover, .social-list-link:focus {
+  fill: var(--main-color);
+  background-color: #000000;
+}
 
 .social-icon {
   width: 20px;
   height: 20px;
 }
 
-.social-list-link:hover,
-.social-list-link:focus {
-  fill: var(--main-color);
-  background-color: #000000;
-}
-
 .main-header {
   font-family: var(--secondary-font);
-  font-size: 72px;
   font-weight: 700;
+  font-size: 72px;
   line-height: 1.181;
   letter-spacing: 0.05em;
   color: #ffffff;
-  margin-bottom: 20px;
 }
 
 .backdrop {
@@ -279,6 +257,14 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   transition: all 500ms linear;
+}
+
+.backdrop.is-hidden {
+  transition: all 500ms linear 500ms;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 500ms linear 0ms;
 }
 
 .modal {
@@ -348,7 +334,6 @@ img {
   padding-left: 42px;
   transition: border-color 250ms linear;
 }
-
 .modal__form-input:focus {
   outline: none;
   border-color: var(--main-color);
@@ -378,37 +363,34 @@ img {
   resize: none;
   transition: border-color 250ms linear;
 }
-
+.modal__form-message:focus {
+  outline: none;
+  border-color: var(--main-color);
+}
 .modal__form-message::-moz-placeholder {
   text-transform: uppercase;
   color: grey;
 }
-
 .modal__form-message:-ms-input-placeholder {
   text-transform: uppercase;
   color: grey;
 }
-
 .modal__form-message::placeholder {
   text-transform: uppercase;
   color: grey;
 }
 
-.modal__form-message:focus {
-  outline: none;
-  border-color: var(--main-color);
-}
-
 .modal__form-policy-text {
   margin-bottom: 20px;
 }
-
 .modal__form-policy-text::before {
   display: inline-block;
   content: "";
   width: 16px;
   height: 16px;
   border: 1px solid #000000;
+  outline: 1px solid #000;
+  margin-right: 10px;
 }
 
 .modal__form-policy:checked + .modal__form-policy-text::before {
@@ -439,10 +421,8 @@ img {
   margin: 0 auto;
   transition: all 250ms linear;
 }
-
-.modal__form-btn:hover,
-.modal__form-btn:focus {
-  background-color: var(--main-color);
+.modal__form-btn:hover, .modal__form-btn:focus {
+  background-color: var(--accent-color);
   color: #fff;
 }
 

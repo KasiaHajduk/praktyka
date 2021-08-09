@@ -9,3 +9,12 @@
   background-color: rgba(0, 0, 0, 0.2);
   transition: all 500ms linear;
 }
+
+.backdrop.is-hidden{
+  transition: all 500ms linear 500ms;
+  & .modal{
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 500ms linear 0ms;
+}
+}
+

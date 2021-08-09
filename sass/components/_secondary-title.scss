@@ -1,25 +1,26 @@
 .secondary-header {
-  font-size: 42px;
+  font-family: var(--secondary-font);
   font-weight: 700;
+  font-size: 42px;
   line-height: 1.667;
   letter-spacing: 0.05em;
-  color: #303030;
-  margin-bottom: 20px;
+  // color: #303030;
+  // margin-bottom: 20px;
 }
-.secondary-header-dark-theme {
-  color: #ffffff;
-}
-.services .secondary-header {
-  padding-bottom: 44px;
-}
-.img-services .secondary-header {
-  padding-bottom: 44px;
-}
+// .secondary-header-dark-theme {
+//   color: #ffffff;
+// }
+// .services .secondary-header {
+//   padding-bottom: 44px;
+// }
+// .img-services .secondary-header {
+//   padding-bottom: 44px;
+// }
 
-.barbers .secondary-header {
-  margin-bottom: 44px;
-}
+// .barbers .secondary-header {
+//   margin-bottom: 44px;
+// }
 
-.contact .secondary-header {
-  margin-bottom: 40px;
-}
+// .contact .secondary-header {
+//   margin-bottom: 40px;
+// }

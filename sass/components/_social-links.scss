@@ -13,28 +13,31 @@
   letter-spacing: 0.2em;
   color: #303030;
   transition: color 250ms linear;
+    &:hover,
+    &:focus {
+    color: var(--main-color);
+  }
 }
 
-.social-links__link:hover,
-.social-links__link:focus {
-  color: var(--main-color);
+
+.social-links__item{
+    &:not(:last-child) {
+    margin-right: 40px;
+    }
+    &:first-child {
+    display: flex;
+    align-items: center;
+  }
+    &:first-child::before {
+    content: "";
+    display: flex;
+    height: 1px;
+    width: 60px;
+    background-color: #303030;
+    margin-right: 40px;
+  }
 }
 
-.social-links__item:not(:last-child) {
-  margin-right: 40px;
-}
-.social-links__item:first-child {
-  display: flex;
-  align-items: center;
-}
-.social-links__item:first-child::before {
-  content: "";
-  display: flex;
-  height: 1px;
-  width: 60px;
-  background-color: #303030;
-  margin-right: 40px;
-}
 
 .social-links-footer {
   display: flex;

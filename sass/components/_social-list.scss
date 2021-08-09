@@ -16,16 +16,15 @@
   align-items: center;
   justify-content: center;
   transition: all 250ms linear;
+    &:hover,
+    &:focus {
+    fill: var(--main-color);
+    background-color: #000000;
+  }
 }
-
 
 .social-icon {
   width: 20px;
   height: 20px;
 }
 
-.social-list-link:hover,
-.social-list-link:focus {
-  fill: var(--main-color);
-  background-color: #000000;
-}
