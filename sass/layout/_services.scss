@@ -1,4 +1,3 @@
-
 .services {
   background-image: url("../images/services-bg.png");
   background-repeat: no-repeat;
@@ -11,26 +10,34 @@
   margin-bottom: 46px;
 }
 
-
-
 .services__list {
   width: 50%;
   padding: 30px 40px;
-  /* background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%); */
+  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%); 
   flex-wrap: wrap;
-  background-color: #ccc;
+  // background-color: #ccc;
+  &:nth-child(4n-1),
+  &:nth-child(4n-2){
+    background-image: linear-gradient(
+      180deg,
+      #090813 0%,
+      rgba(9, 11, 19, 0.2) 100%
+    );
+
+  }
+
 }
 
 .services__list-text,
 .services__list-name,
 .services__list-price {
-  font-size: 18px;
   font-weight: 400;
+  font-size: 18px;
   line-height: 1.667;
   letter-spacing: 0.02em;
   color: #9da4bd;
-  padding-right: 5px;
-  padding-right: 5px;
+  // padding-right: 5px;
+  // padding-right: 5px;
 }
 .services__list-name,
 .services__list-price {
@@ -43,25 +50,25 @@
   justify-content: space-between;
   position: relative;
   z-index: 0;
+
+    &::after {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    z-index: -1;
+  }
+
+    &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
-.services__list-item::after {
-  position: absolute;
-  bottom: 8px;
-  left: 0;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: red;
-  z-index: -1;
-}
 
-.services__list-item:not(:last-child) {
-  margin-bottom: 20px;
-}
 
-.services .modal-btn {
-  display: block;
-  margin: 0 auto;
-}
+
+

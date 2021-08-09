@@ -4,13 +4,22 @@
   align-items: center;
   margin: 0 auto;
 
-  .about & {
-  display: flex;
+  .about &,
+  .hero & 
+  .advantages &{
+   display: flex;
   }
 
   .footer & {
   display: flex;
   justify-content: space-between;
   // padding: 60px 0;
-}
+  }
+
+  .header &{
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    // padding-bottom: 32px;
+  }
 }

@@ -16,6 +16,15 @@
       background-color: var(--main-color);
       color: #ffffff;
     }
+
+    .header &{
+      margin-right: 15px;
+    }
+
+    .services &{
+      display: block;
+      margin: 0 auto;
+    }
 }
 
 .modal-btn-dark {
