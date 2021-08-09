@@ -1,11 +1,149 @@
+:root {
+  --main-font: "Open Sans", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --main-color: #ff6c00;
+}
 
+body {
+  font-family: var(--main-font);
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
 
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
 
+p {
+  margin: 0;
+  padding: 0;
+}
 
+img {
+  display: block;
+}
 
+.list {
+  list-style: none;
+}
 
+.link {
+  text-decoration: none;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  align-items: center;
+}
 
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+/* ====  COMPONENTS  ==== */
+
+.modal-btn {
+  width: 164px;
+  border: 1px solid var(--main-color);
+  border-radius: 25px;
+  padding: 12px 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  /* color: #ffffff; */
+  cursor: pointer;
+  background-color: transparent;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--main-color);
+  color: #ffffff;
+}
+
+.modal-btn-dark {
+  color: #fff;
+}
+.modal-btn-white {
+  color: #000;
+}
+.undertitle {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.undertitle-light-theme,
+.secondary-header-light-theme {
+  color: #303030;
+}
+
+.undertitle-dark-theme {
+  color: rgba(157, 164, 189, 0.6);
+}
+.undertitle-dark-theme::before {
+  /* color: rgba(157, 164, 189, 0.6); */
+  background-color: #9da4bd99;
+}
+.undertitle::before {
+  content: "";
+  height: 1px;
+  width: 60px;
+  background-color: #303030;
+  display: flex;
+  margin-right: 20px;
+}
+
+.description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+.description-dark-theme {
+  color: #9da4bd;
+}
+
+.secondary-header {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.667;
+  letter-spacing: 0.05em;
+  color: #303030;
+  margin-bottom: 20px;
+}
+.secondary-header-dark-theme {
+  color: #ffffff;
+}
+
+.social-links {
+  display: flex;
+}
+.social-links__item:not(:last-child) {
+  margin-right: 40px;
+}
 
 /* ===== HEADER  ==== */
 .header {
@@ -75,7 +213,26 @@
 .hero .container {
   display: flex;
 }
+.social-links {
+  display: flex;
+  transform: rotate(270deg);
+  padding-bottom: 40px;
+  padding-right: 82px;
+  justify-content: flex-end;
+}
 
+.social-links__link {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.364;
+  letter-spacing: 0.2em;
+  color: #303030;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-links__link:hover,
+.social-links__link:focus {
+  color: var(--main-color);
+}
 
 .main-header {
   font-family: var(--secondary-font);
@@ -90,7 +247,21 @@
 .hero__left-side {
   width: 100px;
 }
-
+.social-links__item:not(:last-child) {
+  margin-right: 40px;
+}
+.social-links__item:first-child {
+  display: flex;
+  align-items: center;
+}
+.social-links__item:first-child::before {
+  content: "";
+  height: 1px;
+  width: 60px;
+  background-color: #303030;
+  display: flex;
+  margin-right: 40px;
+}
 
 .hero__right-side {
   flex-grow: 1;
@@ -108,7 +279,10 @@
   background-color: #cccccc;
 }
 
-
+.hero .description {
+  width: 366px;
+  color: #9da4bd;
+}
 
 /* ===== END HERO  ==== */
 
@@ -134,7 +308,9 @@
   color: #555555;
 }
 
-
+.about .description {
+  margin-bottom: 20px;
+}
 .about__text {
   margin-bottom: 40px;
 }
@@ -153,7 +329,9 @@
   margin-bottom: 46px;
 }
 
-
+.services .secondary-header {
+  padding-bottom: 44px;
+}
 
 .services__list {
   width: 50%;
@@ -222,7 +400,9 @@
   margin-bottom: 46px;
 }
 
-
+.img-services .secondary-header {
+  padding-bottom: 44px;
+}
 
 .img-services__list {
   width: 50%;
@@ -338,7 +518,9 @@
   margin-top: 30px;
 }
 
-
+.advantages .description {
+  width: 445px;
+}
 .advantages__text {
   font-size: 11px;
   font-weight: 600;
@@ -355,7 +537,9 @@
   background-color: #f7f7f7;
 }
 
-
+.barbers .secondary-header {
+  margin-bottom: 44px;
+}
 .barbers__list {
   display: flex;
   justify-content: space-between;
@@ -429,7 +613,9 @@
 
 /* ===== contact ===== */
 
-
+.contact .secondary-header {
+  margin-bottom: 40px;
+}
 .address {
   margin-bottom: 70px;
 }
@@ -564,7 +750,9 @@
   color: #9da4bd;
 }
 
-
+.social-links-footer {
+  display: flex;
+}
 
 /*****  REZERWACJA  ****/
 
