@@ -1,15 +1,24 @@
 .secondary-header {
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 42px;
-  line-height: 1.667;
+  font-size: 28px;
+  line-height: 1.178;
   letter-spacing: 0.05em;
+  margin-bottom: 20px;
+
+  
   
     .barbers &, 
     .services & {
       margin-bottom: 44px;
     }
 }
+
+
+
+
+
+
 // .secondary-header-dark-theme {
 //   color: #ffffff;
 // }

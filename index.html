@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- <link rel="stylesheet" href="./css/styleskopia.css" /> -->
-    <link rel="stylesheet" href="./css/main.min.css"/>
+    <link rel="stylesheet" href="./css/main.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,7 +27,7 @@
     />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <nav class="navigation">
           <a href="#" class="navigation__logo animate__bounce">
@@ -57,7 +57,7 @@
           REJESTRACJA ONLINE
         </button>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <!-- HERO-->
@@ -92,28 +92,42 @@
         <div class="container">
           <ul class="about__list list">
             <li class="about__list-item">
-              <img
-                class="about__list-img"
-                src="images/about-us-2.jpg"
-                alt="Zdjęcia about us"
-                width="270"
-                height="445"
-              />
+              <picture> 
+                <source srcset="./images/about/about-us-1-desktop.jpg 1x,
+                                ./images/about/about-us-1-desktop@2x.jpg 2x"
+                          media="(min-width: 1200px)">
+                <source srcset="./images/about/about-us-1-tablet.jpg 1x,
+                                ./images/about/about-us-1-tablet@2x.jpg 2x"
+                          media="(min-width: 768px)">
+                <img
+                  class="about__list-img"
+                  src="./images/about/about-us-1.jpg"
+                  alt="Zdjęcia about us"
+                  
+                  />
+              </picture>
+              
             </li>
             <li class="about__list-item">
-              <img
-                class="about__list-img"
-                src="images/about-us-1.jpg"
-                alt="Zdjęcia about us"
-                width="270"
-                height="445"
-              />
+              <picture> 
+                <source srcset="./images/about/about-us-2-desktop.jpg 1x,
+                                ./images/about/about-us-2-desktop@2x.jpg 2x"
+                          media="(min-width: 1200px)">
+                <source srcset="./images/about/about-us-2-tablet.jpg 1x,
+                                ./images/about/about-us-2-tablet@2x.jpg 2x"
+                          media="(min-width: 768px)">              
+                <img
+                  class="about__list-img"
+                  src="./images/about/about-us-2.jpg"
+                  alt="Zdjęcia about us"
+                />
+              </picture>
             </li>
           </ul>
           <div class="about__right-side">
             <p class="undertitle">O NAS</p>
             <h2 class="secondary-header">
-              Najlepszy Barbershop w Twoim mieście
+              Najlepszy Barbershop <br />w Twoim mieście
             </h2>
             <p class="description">
               Jeśli chcesz dodać pewności do swojego stylu i wyglądu – jesteś w
@@ -134,7 +148,7 @@
       </section>
       <!-- end about us-->
       <!--SERVICES-->
-      <section class="services section">
+      <!-- <section class="services section">
         <div class="container">
           <p class="undertitle undertitle-dark-theme">
             PRZYJDŹ DO NAJLEPSZYCH BARBERÓW W TWOIM MIEŚCIE
@@ -197,10 +211,10 @@
             REJESTRACJA ONLINE
           </button>
         </div>
-      </section>
+      </section> -->
       <!-- END SERVICES-->
       <!-- semantycznie słabe rozwiązanie, przy gradiencie nie ma innej mozliwości-->
-      <section class="img-services section">
+      <!-- <section class="img-services section">
         <div class="container">
           <p class="undertitle undertitle-dark-theme">
             PRZYJDŹ DO NAJLEPSZYCH BARBERÓW W TWOIM MIEŚCIE
@@ -265,11 +279,11 @@
             REJESTRACJA ONLINE
           </button>
         </div>
-      </section>
+      </section> -->
 
       <!-- END SERVICES-->
       <!-- ADVANTAGES     WHY US-->
-      <section class="advantages section">
+      <!-- <section class="advantages section">
         <div class="container">
           <div class="advantages-left-side">
             <ul class="advantages__list list">
@@ -303,10 +317,10 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- END WHY US-->
       <!--BARBERS-->
-      <section class="barbers section">
+      <!-- <section class="barbers section">
         <div class="container">
           <p class="undertitle">Dla prawdziwych mężczyzn</p>
           <h2 class="secondary-header">Nasi barberzy</h2>
@@ -442,11 +456,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--END BARBERS-->
 
       <!--GALLERY-->
-      <section class="gallery section">
+      <!-- <section class="gallery section">
         <div class="container">
           <h2 class="gallery__header" hidden>galeria zdjęć</h2>
           <p class="undertitle">W języku łacinskim “barba” oznacza “broda”</p>
@@ -489,11 +503,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--END GALLERY-->
 
       <!-- ===== contact ===== *-->
-      <section class="contact section">
+      <!-- <section class="contact section">
         <div class="container">
           <section class="contact-form-section">
             <h2 class="secondary-header secondary-header-dark-theme">Rezerwacja online</h2>
@@ -537,9 +551,9 @@
             <p class="contact__hours">Codziennie od 9:00 do 22:00</p>
           </section>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <p class="footer__copy">Copyright 2020</p>
         <ul class="social-links__footer list">
@@ -551,16 +565,13 @@
           </li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
-      <!-- <div class="backdrop" data-modal></div> -->
+
+    <!-- <div class="backdrop is-hidden" data-modal>
+        
         <div class="modal">
             <button type="button" class="close-btn" data-modal-close>X</button>
-           <!-- można dodać obrazek krzyżyk zamknięcia 
-                <svg class="close-btn">
-                <use href="./images/"> </use>
-            </svg> -->
            <h2 class="modal__form-header">
                Rezerwacja online
            </h2> 
@@ -595,7 +606,7 @@
                 </button>
            </form>
       </div>
-    </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
   </body>

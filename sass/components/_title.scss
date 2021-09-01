@@ -1,9 +1,21 @@
 .main-header {
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 72px;
-  line-height: 1.181;
+  font-size: 48px;
+  line-height: 1.167;
   letter-spacing: 0.05em;
   color: #ffffff;
-  //margin-bottom: 20px;
+  // margin-bottom: 20px;
 }
+
+
+// @media screen and (min-width: 1200px) {
+//   .main-header {
+//     font-family: var(--secondary-font);
+//     font-weight: 700;
+//     font-size: 72px;
+//     line-height: 1.181;
+//     letter-spacing: 0.05em;
+//     color: #ffffff;
+//   }
+// }
